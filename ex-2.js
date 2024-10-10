@@ -374,5 +374,10 @@ const bills = [
 ];
 
 // Start coding here
+function totalMemberBills(bill){
+  return bill.filter(members => members.member !== null)
+}
 
-const newBills;
+
+const newBills = totalMemberBills(bills);
+console.log(newBills);
